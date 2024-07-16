@@ -1,0 +1,13 @@
+syntax = "proto3";
+package p2.server.storage;
+option java_outer_classname = "IdentityRecordProto";
+
+message IdentityRecord {
+  string uuid = 1;
+  string login_name = 2;
+  string real_name = 3;
+  string password = 4;
+  string client_ip = 5;
+  int64 create_date = 6;
+  int64 last_change_date = 7;
+}
